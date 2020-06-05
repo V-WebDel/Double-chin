@@ -1,0 +1,665 @@
+@import "vars"
+@import "libs"
+@import "fonts"
+
+/*  ---  Мои стили для проекта  ---  */
+
+::placeholder
+  font-family: $default-light
+  color: $accent
+
+::selection
+  background-color: $accent
+  color: #fff
+
+html
+  overflow-x: hidden
+  box-sizing: border-box
+
+*, ::before, ::after
+  box-sizing: inherit
+  
+body
+  position: relative
+  min-width: 320px
+  overflow: hidden
+  font-family: $default-regular
+  font-size: 16px
+  line-height: 1.4
+  color: $text
+  
+  input, textarea
+    border: #666 1px solid
+    outline: none
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+b, strong
+  font-weight: bold
+
+.btn
+  position: relative
+  padding: 15px 25px
+  font-size: 18px
+  font-family: $default-medium
+  color: #000000
+  text-transform: uppercase
+  background-color: $accent
+  border: none
+  cursor: pointer
+  transform: translate(10px, -10px)
+  transition: $slowdown
+
+  &::before
+    content: ''
+    position: absolute
+    left: -10px
+    bottom: -10px
+    width: 100%
+    height: 100%
+    border: 1px solid $accent
+    transition: $slowdown
+
+  &:hover
+    text-decoration: none
+    transform: translate(0, 0)
+
+    &::before
+      transform: translate(10px, -10px)
+
+  &:active
+    background-color: darken($accent, 10%)
+
+    &::before
+      display: none
+  
+.no-btn
+  padding: 0
+  background: none
+  border: none
+  &:active, &:focus
+    outline: none
+  
+.lst
+  margin: 0
+  padding: 0
+  list-style: none
+  
+.container-relative
+  position: relative
+  height: 100%
+  
+h1, h2, h3, h4
+  font-family: $default-bold
+  line-height: 1.2
+
+.title-text
+  position: relative
+  margin-bottom: 0
+  margin-left: 200px
+  font-size: 30px
+  font-family: $accent-font
+  font-weight: 400
+  text-transform: uppercase
+  line-height: 1.5
+
+  &_point-black
+    &::before
+      content: ''
+      position: absolute
+      left: -250px
+      top: -30px
+      z-index: 1
+      width: 198px
+      height: 110px
+      background-image: url(../img/point.svg)
+      background-repeat: repeat
+      background-position: center
+
+  &_point-light
+    &::before
+      content: ''
+      position: absolute
+      left: -250px
+      bottom: 30px
+      z-index: 1
+      width: 198px
+      height: 240px
+      background-image: url(../img/point-light.svg)
+      background-repeat: repeat
+      background-position: center top
+
+.text-accent
+  color: $accent
+
+.text-nowrap
+  white-space: nowrap
+
+.text-up
+  text-transform: uppercase
+
+.text-black
+  font-family: $default-black
+  
+.price
+  animation-duration: 2s
+  animation-delay: 2s
+  animation-iteration-count: infinite
+
+/* top */
+.top
+  position: relative
+  margin-bottom: 50px
+  color: #ffffff
+
+  &__bg-body
+    position: absolute
+    left: 0
+    bottom: -50px
+    z-index: 2
+    width: 430px
+    height: 590px
+    background-image: url(../img/main_image.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+  &__bg-points
+    position: absolute
+    left: -70px
+    bottom: -85px
+    z-index: 1
+    width: 220px
+    height: 520px
+    background-image: url(../img/point.svg)
+    background-repeat: repeat
+    background-position: center
+
+  &__image
+    padding-top: 25px
+
+  &__wrap
+    position: relative
+    display: flex
+    flex-direction: column
+    min-height: 650px
+    padding: 35px 0
+    text-align: center
+    line-height: 1.1
+    background-color: #2a2b2d
+
+    &::before
+      content: ''
+      position: absolute
+      right: -100%
+      top: 0
+      height: 100%
+      width: 100%
+      background-color: #2a2b2d
+
+  &__wrap-text
+    width: 670px
+    margin-left: auto
+    margin-right: 30px
+
+  &__title
+    margin-bottom: 30px
+    font-size: 48px
+    font-family: $accent-font
+    font-weight: 400
+    text-transform: uppercase
+    line-height: 1
+
+  &__subtitle
+    margin-bottom: 8px
+    font-size: 24px
+    font-family: $default-medium
+
+  &__wrap-price
+    display: inline-block
+    margin: 0 auto
+    margin-bottom: 20px
+    padding: 5px 20px
+    border: 1px solid $accent
+
+  &__price
+    margin-bottom: 0
+    font-size: 24px
+    font-family: $default-black
+    text-transform: uppercase
+    color: $accent
+
+  &__effect
+    margin-bottom: 30px
+    font-size: 24px
+    font-family: $default-regular
+    text-transform: uppercase
+    letter-spacing: 2px
+
+  &__wrap_form
+    width: 90%
+    margin-left: auto
+
+  &__form-text
+    margin-top: 40px
+
+  &__form
+    margin-top: 30px
+
+/* form */
+.form
+  position: relative
+  z-index: 10
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+
+  &__field
+    width: 24%
+    height: 53px
+    padding: 14px 10px
+    font-size: 18px
+    font-family: $default-medium
+    color: $accent
+    border: 1px solid $accent
+    background-color: #2a2b2d
+    transition: all 0.2s linear
+
+    &:hover
+      border: 3px solid $accent
+
+  &__btn
+    width: 24%
+
+/* service-set */
+.service-set
+
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 70px
+
+  &__item
+    width: 320px
+    margin-top: 70px
+
+    &:hover
+      .service-set__image
+        transform: translate(0, 0)
+
+        &::before
+          transform: translate(15px, -15px)
+
+  &__image
+    position: relative
+    transform: translate(15px, -15px)
+    transition: $slowdown
+
+    img
+      width: 100%
+
+    &::before
+      content: ''
+      position: absolute
+      left: -15px
+      bottom: -15px
+      z-index: -1
+      width: 100%
+      height: 100%
+      background-color: $accent
+      transition: $slowdown
+
+  &__text
+    margin-top: 20px
+    margin-bottom: 0
+    font-size: 18px
+    text-align: center
+
+/* eliminate */
+.eliminate
+  padding: 30px 0
+
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-bottom: 30px
+    
+  &__item
+    width: 190px
+    margin-top: 50px
+
+  &__image
+    position: relative
+    height: 130px
+    margin-bottom: 20px
+
+    img
+      position: absolute
+      top: 0
+      left: 10%
+
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      background-color: $accent
+      transform: translate(-50%)
+
+  &__text
+    width: 100%
+    text-align: center
+
+
+/* advantages */
+.advantages
+  padding: 110px 0
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    margin-top: 20px
+
+  &__item
+    margin-top: 35px
+    padding: 20px
+    font-size: 30px
+    font-family: $default-medium
+    line-height: 1.2
+    border: 2px solid $accent
+
+/* doctor */
+.doctor
+  padding-top: 60px
+  padding-bottom: 80px
+  background-color: $accent
+
+  &__wrap
+    display: flex
+
+  &__item
+    width: 50%
+
+    &_left
+      display: flex
+      justify-content: flex-end
+
+    &_right
+      padding-left: 40px
+
+  &__image
+    position: relative
+    width: 440px
+    height: 500px
+
+    &::before
+      content: ''
+      position: absolute
+      left: -30px
+      bottom: -30px
+      z-index: 1
+      width: 100%
+      height: 100%
+      border: 2px solid #2a2b2d
+
+    &::after
+      content: ''
+      position: absolute
+      left: -130px
+      top: 135px
+      z-index: 3
+      width: 200px
+      height: 110px
+      background-image: url(../img/point.svg)
+      background-repeat: repeat
+      background-position: center
+
+    img
+      position: absolute
+      z-index: 2
+
+  &__title
+    margin-bottom: 40px
+    font-size: 30px
+    font-family: $accent-font
+    font-weight: 400
+    text-transform: uppercase
+    line-height: 1.5
+
+    &_top
+      display: none
+
+  &__name
+    margin-bottom: 25px
+    font-size: 24px
+    font-family: $default-black
+    color: #2a2b2d
+
+  &__profession
+    font-size: 18px
+    font-family: $default-bold
+    color: #2a2b2d
+
+  &__text
+    font-family: $default-medium
+    line-height: 1.2
+    color: #2a2b2d
+
+  &__address
+    font-family: $default-italic
+    
+/* comments */
+.comments
+  padding-top: 70px
+  padding-bottom: 30px
+
+  &__wrap
+    padding-top: 60px
+    padding-bottom: 100px
+
+  &__item
+    display: flex
+    width: 860px
+
+  &__block_text
+    width: 50%
+    padding-top: 25px
+    text-align: right
+
+  &__text
+    position: relative
+    margin-bottom: 25px
+    font-family: $default-medium
+    line-height: 1.3
+
+    &::before
+      content: ''
+      position: absolute
+      left: 20px
+      top: -60px
+      z-index: -1
+      width: 130px
+      height: 110px
+      background-image: url(../img/icons/commas.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+
+  &__name
+    font-size: 24px
+    font-family: $default-black
+
+  &__block_image
+    width: 50%
+    padding-left: 60px
+
+  &__image
+    position: relative
+    width: 360px
+    height: 440px
+    transition: $slowdown
+
+    &::before
+      content: ''
+      position: absolute
+      left: -30px
+      bottom: -30px
+      z-index: -2
+      width: 100%
+      height: 100%
+      background-color: $accent
+
+    &::after
+      content: ''
+      position: absolute
+      left: -135px
+      bottom: -80px
+      z-index: -1
+      width: 180px
+      height: 175px
+      background-image: url(../img/point.svg)
+      background-repeat: repeat
+      background-position: top right
+
+  &__image-inner
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 360px
+    height: 440px
+    overflow: hidden
+
+/* swiper */
+.swiper
+
+  &-button-next, &-button-prev
+    display: none
+    top: 5%
+    width: 40px
+    height: 40px
+    background: none
+
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      width: 40px
+      height: 40px
+      background-image: url(../img/icons/arrow-right.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+      transform: translate(-50%, -50%) 
+
+  &-button-prev
+    &::before
+      transform: translate(-50%, -50%) rotate(180deg)
+      
+.swiper-slide:not(.swiper-slide-active)
+  .comments
+    &__item
+      position: absolute
+      right: 100px
+      width: 200px
+
+    &__block_text
+      display: none
+
+    &__block_image
+      width: 50%
+
+    &__image
+      display: flex
+      align-items: center
+      width: 200px
+
+      img
+        filter: grayscale(100%)
+
+      &::before, &::after
+        display: none
+
+/* text-block */
+.text-block
+  padding: 30px 0
+  text-align: center
+
+  &__title
+    margin-bottom: 30px
+    font-size: 30px
+    font-family: $accent-font
+    font-weight: 400
+    text-transform: uppercase
+    line-height: 1
+
+    &_bottom
+      font-size: 36px
+
+  &__text
+    margin-bottom: 30px
+    font-size: 18px
+
+  &__subtitle
+    margin-bottom: 20px
+    font-size: 18px
+    text-transform: uppercase
+    line-height: 1.4
+
+/* contact-form */
+.contact-form
+  padding: 30px 0
+  color: #ffffff
+  text-align: center
+  background-color: #2a2b2d
+
+  &__title
+    margin-bottom: 5px
+    font-size: 22px
+    line-height: 1.2
+
+  &__wrap-price
+    display: inline-block
+    margin: 0 auto
+    margin-bottom: 0
+    padding: 5px 20px
+    border: 1px solid $accent
+
+  &__price
+    margin-bottom: 0
+    font-size: 24px
+    font-family: $default-black
+    color: $accent
+
+
+/* footer */
+.footer
+  padding: 60px 0
+  color: #717171
+  text-align: center
+  background-color: #ffffff
+
+  &__wrap
+    p
+      margin-bottom: 0
+    a
+      margin-bottom: 0
+      color: #717171
+      transition: $slowdown
+
+      &:hover
+        color: darken(#717171, 20%)
+
+
+
+@import "media" // Always at the end
