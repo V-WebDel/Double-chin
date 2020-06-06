@@ -1,69 +1,70 @@
-@charset "UTF-8";
-/*  ---  Шрифты для проекта  ---  */
 @font-face {
-  font-family: "Roboto-Black";
-  font-weight: normal;
+  font-family: "Roboto-D";
+  font-weight: 900;
   font-style: normal;
   src: url("../fonts/Roboto-Black.eot");
-  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Bold";
-  font-weight: normal;
+  font-family: "Roboto-D";
+  font-weight: bold;
   font-style: normal;
   src: url("../fonts/Roboto-Bold.eot");
-  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Medium";
-  font-weight: normal;
+  font-family: "Roboto-D";
+  font-weight: 500;
   font-style: normal;
   src: url("../fonts/Roboto-Medium.eot");
-  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Regular";
-  font-weight: normal;
+  font-family: "Roboto-D";
+  font-weight: 400;
   font-style: normal;
   src: url("../fonts/Roboto-Regular.eot");
-  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Italic";
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Roboto-D";
+  font-weight: 400;
+  font-style: italic;
   src: url("../fonts/Roboto-Italic.eot");
-  src: url("../fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto-Italic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto-Italic.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Roboto-Light";
-  font-weight: normal;
+  font-family: "Roboto-D";
+  font-weight: 300;
   font-style: normal;
   src: url("../fonts/Roboto-Light.eot");
-  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Bodoni-Cyrillic";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/bodoni-cyrillic.eot");
-  src: url("../fonts/bodoni-cyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/bodoni-cyrillic.woff") format("woff"), url("../fonts/bodoni-cyrillic.ttf") format("truetype"); }
+  src: url("../fonts/Bodoni-Cyrillic.eot");
+  src: url("../fonts/Bodoni-Cyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/Bodoni-Cyrillic.woff") format("woff"), url("../fonts/Bodoni-Cyrillic.woff2") format("woff2"); }
 
-/*  ---  Мои стили для проекта  ---  */
 ::-webkit-input-placeholder {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: #fdd5c9; }
+
 ::-moz-placeholder {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: #fdd5c9; }
+
 :-ms-input-placeholder {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: #fdd5c9; }
+
 ::-ms-input-placeholder {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: #fdd5c9; }
+
 ::placeholder {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: #fdd5c9; }
 
 ::-moz-selection {
@@ -87,7 +88,8 @@ body {
   position: relative;
   min-width: 320px;
   overflow: hidden;
-  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-family: "Roboto-D", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #525252; }
@@ -105,13 +107,15 @@ b, strong {
 
 .btn {
   position: relative;
-  padding: 15px 25px;
+  padding: 14px 25px;
   font-size: 18px;
-  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1;
   color: #000000;
   text-transform: uppercase;
   background-color: #fdd5c9;
   border: none;
+  border-radius: 0;
   cursor: pointer;
   -webkit-transform: translate(10px, -10px);
       -ms-transform: translate(10px, -10px);
@@ -161,16 +165,16 @@ b, strong {
   height: 100%; }
 
 h1, h2, h3, h4 {
-  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
   line-height: 1.2; }
 
 .title-text {
   position: relative;
   margin-bottom: 0;
   margin-left: 200px;
+  font-weight: 400;
   font-size: 30px;
   font-family: "Bodoni-Cyrillic", "Times New Roman", Times, serif;
-  font-weight: 400;
   text-transform: uppercase;
   line-height: 1.5; }
   .title-text_point-black::before {
@@ -206,7 +210,7 @@ h1, h2, h3, h4 {
   text-transform: uppercase; }
 
 .text-black {
-  font-family: "Roboto-Black", Arial, Helvetica, sans-serif; }
+  font-weight: 900; }
 
 .price {
   -webkit-animation-duration: 2s;
@@ -274,15 +278,15 @@ h1, h2, h3, h4 {
     margin-right: 30px; }
   .top__title {
     margin-bottom: 30px;
+    font-weight: 400;
     font-size: 48px;
     font-family: "Bodoni-Cyrillic", "Times New Roman", Times, serif;
-    font-weight: 400;
     text-transform: uppercase;
     line-height: 1; }
   .top__subtitle {
     margin-bottom: 8px;
-    font-size: 24px;
-    font-family: "Roboto-Medium", Arial, Helvetica, sans-serif; }
+    font-weight: 500;
+    font-size: 24px; }
   .top__wrap-price {
     display: inline-block;
     margin: 0 auto;
@@ -291,14 +295,14 @@ h1, h2, h3, h4 {
     border: 1px solid #fdd5c9; }
   .top__price {
     margin-bottom: 0;
+    font-weight: 900;
     font-size: 24px;
-    font-family: "Roboto-Black", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: #fdd5c9; }
   .top__effect {
     margin-bottom: 30px;
+    font-weight: 400;
     font-size: 24px;
-    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px; }
   .top__wrap_form {
@@ -327,8 +331,8 @@ h1, h2, h3, h4 {
     width: 24%;
     height: 53px;
     padding: 14px 10px;
+    font-weight: 500;
     font-size: 18px;
-    font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
     color: #fdd5c9;
     border: 1px solid #fdd5c9;
     background-color: #2a2b2d;
@@ -455,8 +459,8 @@ h1, h2, h3, h4 {
   .advantages__item {
     margin-top: 35px;
     padding: 20px;
+    font-weight: 500;
     font-size: 30px;
-    font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
     line-height: 1.2;
     border: 2px solid #fdd5c9; }
 
@@ -513,27 +517,28 @@ h1, h2, h3, h4 {
   .doctor__title {
     margin-bottom: 40px;
     font-size: 30px;
-    font-family: "Bodoni-Cyrillic", "Times New Roman", Times, serif;
     font-weight: 400;
+    font-family: "Bodoni-Cyrillic", "Times New Roman", Times, serif;
     text-transform: uppercase;
     line-height: 1.5; }
     .doctor__title_top {
       display: none; }
   .doctor__name {
     margin-bottom: 25px;
+    font-weight: 900;
     font-size: 24px;
-    font-family: "Roboto-Black", Arial, Helvetica, sans-serif;
     color: #2a2b2d; }
   .doctor__profession {
+    font-weight: 700;
     font-size: 18px;
-    font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
     color: #2a2b2d; }
   .doctor__text {
-    font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
     line-height: 1.2;
     color: #2a2b2d; }
   .doctor__address {
-    font-family: "Roboto-Italic", Arial, Helvetica, sans-serif; }
+    font-style: italic;
+    font-weight: 400; }
 
 /* comments */
 .comments {
@@ -555,7 +560,7 @@ h1, h2, h3, h4 {
   .comments__text {
     position: relative;
     margin-bottom: 25px;
-    font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
     line-height: 1.3; }
     .comments__text::before {
       content: '';
@@ -570,8 +575,8 @@ h1, h2, h3, h4 {
       background-repeat: no-repeat;
       background-size: contain; }
   .comments__name {
-    font-size: 24px;
-    font-family: "Roboto-Black", Arial, Helvetica, sans-serif; }
+    font-weight: 900;
+    font-size: 24px; }
   .comments__block_image {
     width: 50%;
     padding-left: 60px; }
@@ -679,6 +684,7 @@ h1, h2, h3, h4 {
   text-align: center; }
   .text-block__title {
     margin-bottom: 30px;
+    font-weight: 400;
     font-size: 30px;
     font-family: "Bodoni-Cyrillic", "Times New Roman", Times, serif;
     font-weight: 400;
@@ -713,8 +719,8 @@ h1, h2, h3, h4 {
     border: 1px solid #fdd5c9; }
   .contact-form__price {
     margin-bottom: 0;
+    font-weight: 900;
     font-size: 24px;
-    font-family: "Roboto-Black", Arial, Helvetica, sans-serif;
     color: #fdd5c9; }
 
 /* footer */

@@ -1,11 +1,8 @@
 @import "vars"
-@import "libs"
 @import "fonts"
 
-/*  ---  Мои стили для проекта  ---  */
-
 ::placeholder
-  font-family: $default-light
+  font-weight: 300
   color: $accent
 
 ::selection
@@ -23,7 +20,8 @@ body
   position: relative
   min-width: 320px
   overflow: hidden
-  font-family: $default-regular
+  font-weight: 400
+  font-family: $default-font
   font-size: 16px
   line-height: 1.4
   color: $text
@@ -42,13 +40,15 @@ b, strong
 
 .btn
   position: relative
-  padding: 15px 25px
+  padding: 14px 25px
   font-size: 18px
-  font-family: $default-medium
+  font-weight: 500
+  line-height: 1
   color: #000000
   text-transform: uppercase
   background-color: $accent
   border: none
+  border-radius: 0
   cursor: pointer
   transform: translate(10px, -10px)
   transition: $slowdown
@@ -93,16 +93,16 @@ b, strong
   height: 100%
   
 h1, h2, h3, h4
-  font-family: $default-bold
+  font-weight: 700
   line-height: 1.2
 
 .title-text
   position: relative
   margin-bottom: 0
   margin-left: 200px
+  font-weight: 400
   font-size: 30px
   font-family: $accent-font
-  font-weight: 400
   text-transform: uppercase
   line-height: 1.5
 
@@ -142,7 +142,7 @@ h1, h2, h3, h4
   text-transform: uppercase
 
 .text-black
-  font-family: $default-black
+  font-weight: 900
   
 .price
   animation-duration: 2s
@@ -207,16 +207,16 @@ h1, h2, h3, h4
 
   &__title
     margin-bottom: 30px
+    font-weight: 400
     font-size: 48px
     font-family: $accent-font
-    font-weight: 400
     text-transform: uppercase
     line-height: 1
 
   &__subtitle
     margin-bottom: 8px
+    font-weight: 500
     font-size: 24px
-    font-family: $default-medium
 
   &__wrap-price
     display: inline-block
@@ -227,15 +227,15 @@ h1, h2, h3, h4
 
   &__price
     margin-bottom: 0
+    font-weight: 900
     font-size: 24px
-    font-family: $default-black
     text-transform: uppercase
     color: $accent
 
   &__effect
     margin-bottom: 30px
+    font-weight: 400
     font-size: 24px
-    font-family: $default-regular
     text-transform: uppercase
     letter-spacing: 2px
 
@@ -263,8 +263,8 @@ h1, h2, h3, h4
     width: 24%
     height: 53px
     padding: 14px 10px
+    font-weight: 500
     font-size: 18px
-    font-family: $default-medium
     color: $accent
     border: 1px solid $accent
     background-color: #2a2b2d
@@ -373,8 +373,8 @@ h1, h2, h3, h4
   &__item
     margin-top: 35px
     padding: 20px
+    font-weight: 500
     font-size: 30px
-    font-family: $default-medium
     line-height: 1.2
     border: 2px solid $accent
 
@@ -431,8 +431,8 @@ h1, h2, h3, h4
   &__title
     margin-bottom: 40px
     font-size: 30px
-    font-family: $accent-font
     font-weight: 400
+    font-family: $accent-font
     text-transform: uppercase
     line-height: 1.5
 
@@ -441,22 +441,23 @@ h1, h2, h3, h4
 
   &__name
     margin-bottom: 25px
+    font-weight: 900
     font-size: 24px
-    font-family: $default-black
     color: #2a2b2d
 
   &__profession
+    font-weight: 700
     font-size: 18px
-    font-family: $default-bold
     color: #2a2b2d
 
   &__text
-    font-family: $default-medium
+    font-weight: 500
     line-height: 1.2
     color: #2a2b2d
 
   &__address
-    font-family: $default-italic
+    font-style: italic
+    font-weight: 400
     
 /* comments */
 .comments
@@ -479,7 +480,7 @@ h1, h2, h3, h4
   &__text
     position: relative
     margin-bottom: 25px
-    font-family: $default-medium
+    font-weight: 500
     line-height: 1.3
 
     &::before
@@ -496,8 +497,8 @@ h1, h2, h3, h4
       background-size: contain
 
   &__name
+    font-weight: 900
     font-size: 24px
-    font-family: $default-black
 
   &__block_image
     width: 50%
@@ -597,6 +598,7 @@ h1, h2, h3, h4
 
   &__title
     margin-bottom: 30px
+    font-weight: 400
     font-size: 30px
     font-family: $accent-font
     font-weight: 400
@@ -637,8 +639,8 @@ h1, h2, h3, h4
 
   &__price
     margin-bottom: 0
+    font-weight: 900
     font-size: 24px
-    font-family: $default-black
     color: $accent
 
 
